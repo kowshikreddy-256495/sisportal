@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.calculator-container {
+    text-align: center;
+}
+
+.calculator-container h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.calculator {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 320px;
+}
+
+.display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2em;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-operator {
+    background-color: #667eea;
+    color: white;
+}
+
+.btn-operator:hover {
+    background-color: #5568d3;
+}
+
+.btn-clear {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #ff5252;
+}
+
+.btn-equals {
+    background-color: #51cf66;
+    color: white;
+    grid-column: span 2;
+}
+
+.btn-equals:hover {
+    background-color: #40c057;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90vw;
+        max-width: 300px;
+    }
+
+    .btn {
+        padding: 18px;
+        font-size: 1.1em;
+    }
+
+    .calculator-container h1 {
+        font-size: 2em;
+    }
+}
