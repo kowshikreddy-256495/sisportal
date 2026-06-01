@@ -1,0 +1,47 @@
+.App {
+  min-height: 100vh;
+  background: #f6f8fb;
+  color: #222;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #1f2937;
+  color: #fff;
+}
+
+.app-header .brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.app-nav button {
+  border: none;
+  background: #60a5fa;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.app-nav button:hover {
+  background: #3b82f6;
+}
+
+.logout-button {
+  background: #ef4444;
+}
+
+.logout-button:hover {
+  background: #dc2626;
+}
