@@ -1,6 +1,6 @@
-# Cafe Management System
+# sisportal
 
-This workspace contains a starter structure for a cafe management application.
+This workspace contains a starter structure for a sis portal 
 
 ## Structure
 
